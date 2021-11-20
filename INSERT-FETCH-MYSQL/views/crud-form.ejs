@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <h2>Enter employee details</h2>
+        <form action="<%=(typeof editData!='undefined')?'/crud/update/'+editData.Eid:'/crud/create'%>" method="POST">
+            <label for ="Ename">Enter Name:</label>
+            <input type="text"   name="Ename" required
+                value="<%=(typeof editData!='undefined')? editData.Ename:''%>">
+            <br/><br/>
+        <label for="Designation">Designation:</label>
+            <input type="text"  name="Designation" required
+                value="<%=(typeof editData!='undefined')? editData.Designation:''%>">
+            <br/><br />
+        <label for = "Salary">Salary</label>
+            <input type="text"  name="Salary" required
+                value="<%=(typeof editData!='undefined')? editData.Salary:''%>">
+<br /><br />
+            
+            <button type="submit">Submit</button>
+    </div>
+    </div>
+    
+</body>
+
+</html>
