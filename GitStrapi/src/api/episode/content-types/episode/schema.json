@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "episodes",
+  "info": {
+    "singularName": "episode",
+    "pluralName": "episodes",
+    "displayName": "episode"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Episode_No": {
+      "type": "integer",
+      "required": true
+    },
+    "Episode_Title": {
+      "type": "string",
+      "required": true
+    },
+    "Episode_Description": {
+      "type": "richtext"
+    },
+    "Episode_Video_FileName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
